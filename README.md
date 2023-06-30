@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Fetching Server Data
+
+1. Using useEffect in the client component
+2. Passing data down as props from the server component
+
+- 1번 방법을 사용하면 페이지 로드시 유저가 빈 HTML을 먼저 보게 되고 조금 시간이 지나야 html 내용이 채워진다. 그렇게 되면 검색엔진 봇들이 페이지 수집을 정상적으로 하기 힘들고 검색엔진 노출 측면에서 단점이 있을 수 있다.
+- Summary : 검색노츨이 중요한 페이지는 2번 방법을 사용하자
