@@ -32,7 +32,7 @@ button {
   margin-bottom: 5px;
   box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
 }
-.list-item h4 {
+.list-item a {
   font-size: 20px;
   font-weight: 800;
   margin: 0;
