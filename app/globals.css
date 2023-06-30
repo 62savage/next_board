@@ -18,6 +18,7 @@ ul {
 
 button {
   cursor: pointer;
+  border: none;
 }
 /* - LIST -  */
 .list-bg {
@@ -40,4 +41,18 @@ button {
 .list-item p {
   color: grey;
   margin: 5px 0px;
+}
+/* Write */
+.p-20 {
+  padding: 20px;
+}
+input {
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 15px;
+  background: lightgray;
+  border-radius: 5px;
 }
