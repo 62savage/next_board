@@ -11,6 +11,9 @@ export default async function List() {
           <Link href={`/detail/${list._id.toString()}`} prefetch={false}>
             {list.title}
           </Link>
+          <Link href={`edit/${list._id.toString()}`} className="list-btn">
+            ✏️
+          </Link>
           <p>6월 30일</p>
         </div>
       ))}
