@@ -18,7 +18,24 @@ export default function ListItem({ result }) {
           >
             ✏️
           </Link>
-          <button>🗑️</button>
+          <button
+            onClick={(e) => {
+              fetch(`/api/post/delete?id=${list._id}`, { method: 'DELETE' }) //
+                .then((r) => {
+                  if (r.status === 200) {
+                    e.target.parentElement.style.opacity = 0;
+                    setTimeout(() => {
+                      e.target.parentElement.style.display = 'none';
+                    }, 1000);
+                  } else {
+                    alert(`server Error`);
+                  }
+                })
+                .catch(console.error);
+            }}
+          >
+            🗑️
+          </button>
           <p>6월 30일</p>
         </div>
       ))}

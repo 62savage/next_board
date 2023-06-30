@@ -40,3 +40,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - 1번 방법을 사용하면 페이지 로드시 유저가 빈 HTML을 먼저 보게 되고 조금 시간이 지나야 html 내용이 채워진다. 그렇게 되면 검색엔진 봇들이 페이지 수집을 정상적으로 하기 힘들고 검색엔진 노출 측면에서 단점이 있을 수 있다.
 - Summary : 검색노츨이 중요한 페이지는 2번 방법을 사용하자
+
+## Query String vs URL parameter
+
+1. Query String : ?a=1&b=2&c=3
+2. URL parameter : pages/api/abc/[id].js
+
+- 두가지 사항 모두 req.query로 출력할 수 있다.
